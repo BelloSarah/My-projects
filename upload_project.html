@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="home.html">Home</a>
+        </nav>
+
+        <h2>Upload Undergraduate Project</h2>
+        <form action="upload_project.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="title" placeholder="Project Title" required><br><br>
+            <select id="supervisor" name="supervisor" onchange="updateStudents()">
+                <option value="">Select Supervisor</option>
+                <option value="Supervisor 1">Supervisor (one) 1</option>
+                <option value="Supervisor 2">Supervisor (two) 2</option>
+                <option value="Supervisor 3">Supervisor (three) 3</option>
+                <option value="Supervisor 4">Supervisor (four) 4</option>
+                <option value="Supervisor 5">Supervisor (five) 5</option>
+                <option value="Supervisor 6">Supervisor (six) 6</option>
+                <option value="Supervisor 7">Supervisor (seven) 7</option>
+                <option value="Supervisor 8">Supervisor (eight) 8</option>
+                <option value="Supervisor 9">Supervisor (nine) 9</option>
+                <option value="Supervisor 10">Supervisor (ten) 10</option>
+                <option value="Supervisor 11">Supervisor (eleven) 11</option>
+                <option value="Supervisor 12">Supervisor (twelve) 12</option>
+                <option value="Supervisor 13">Supervisor (thirteen) 13</option>
+                <option value="Supervisor 14">Supervisor (fourteen) 14</option>
+                <option value="Supervisor 15">Supervisor (fifteen) 15</option>
+                <!-- Add more supervisor options as needed -->
+            </select><br><br>
+            <input type="text" id="student" name="student" placeholder="Enter Student Matric Number" required><br><br>
+            <br><br>
+            <input type="file" name="file" required><br><br>
+            <input type="submit" name="submit" value="Upload Project">
+        </form>
+    </div>
+
+    <script>
+        function updateStudents() {
+            var supervisorSelect = document.getElementById("supervisor");
+            var studentSelect = document.getElementById("student");
+
+            // Clear existing options
+            studentSelect.innerHTML = '';
+
+            // Get selected supervisor
+            var selectedSupervisor = supervisorSelect.value;
+
+            // Populate student matric numbers based on selected supervisor
+            if (selectedSupervisor === "Supervisor 1") {
+                addOption(studentSelect, "2022001", "2022001");
+                addOption(studentSelect, "fuku/sci/19/com/0245", "FUKU/SCI/19/COM/0245");
+                addOption(studentSelect, "2022003", "2022003");
+                addOption(studentSelect, "2022004", "2022004");
+                // Add more students as needed
+            } else if (selectedSupervisor === "Supervisor 2") {
+                addOption(studentSelect, "2022005", "2022005");
+                addOption(studentSelect, "2022006", "2022006");
+                addOption(studentSelect, "2022007", "2022007");
+                addOption(studentSelect, "2022008", "2022008");
+                // Add more students as needed
+            } else if (selectedSupervisor === "Supervisor 3") {
+                addOption(studentSelect, "2022009", "2022009");
+                addOption(studentSelect, "2022010", "2022010");
+                addOption(studentSelect, "2022011", "2022011");
+                addOption(studentSelect, "2022012", "2022012");
+                // Add more students as needed
+            } else if (selectedSupervisor === "Supervisor 4") {
+                addOption(studentSelect, "2022013", "2022013");
+                addOption(studentSelect, "2022014", "2022014");
+                addOption(studentSelect, "2022015", "2022015");
+                addOption(studentSelect, "2022016", "2022016");
+                // Add more students as needed
+            } else if (selectedSupervisor === "Supervisor 5") {
+                addOption(studentSelect, "2022017", "2022017");
+                addOption(studentSelect, "2022018", "2022018");
+                addOption(studentSelect, "2022019", "2022019");
+                addOption(studentSelect, "2022020", "2022020");
+                // Add more students as needed
+            } else if (selectedSupervisor === "Supervisor 6") {
+                addOption(studentSelect, "2022021", "2022021");
+                addOption(studentSelect, "2022022", "2022022");
+                addOption(studentSelect, "2022023", "2022023");
+                addOption(studentSelect, "2022024", "2022024");
+                addOption(studentSelect, "2022025", "2022025");
+                // Add more students as needed
+            }
+            // Add more supervisor conditions as needed
+        }
+
+        function addOption(selectElement, text, value) {
+            var option = document.createElement("option");
+            option.textContent = text;
+            option.value = value;
+            selectElement.appendChild(option);
+        }
+    </script>
+</body>
+</html>

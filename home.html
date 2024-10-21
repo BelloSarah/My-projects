@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+ /* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('fuk.jpg'); /* Add the path to your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff; /* Default text color */
+}
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text */
+    padding: 20px;
+    width: 100%; /* Full width */
+    color: #fff; /* White header text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+
+.logo img {
+    width: 90px;
+    height: auto;
+    margin-right: 20px; /* Reduced spacing */
+}
+
+/* Navbar styles */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+    border-bottom: 2px solid #6ab04c; /* Add a border to the bottom */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    transition: background-color 0.3s; /* Add a smooth transition */
+}
+
+.navbar a:hover {
+    background-color: #555; /* Darker hover color */
+}
+
+.navbar a.active {
+    background-color: #6ab04c; /* Active link color */
+}
+
+/* Content container styles */
+.content-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background */
+    padding: 20px;
+    margin: 20px auto; /* Center content horizontally */
+    max-width: 800px; /* Limit maximum width */
+    border-radius: 10px;
+}
+
+/* Content styles */
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 36px; /* Slightly smaller heading */
+}
+
+.content p {
+    font-size: 24px; /* Reduced paragraph font size */
+    color: #b3e6ff; /* Light blue text color */
+}
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">
+        <img src="fuk-logo.jpg" alt="Logo"> <!-- Replace 'logo.png' with the path to your logo -->
+    </div>
+    <div class="header-text">
+        <h1>Department of Computer Science, Federal University of Kashere, Gombe State</h1>
+        <h1>Undergraduate Students Project Repository</h1>
+    </div>
+</div>
+
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="sign_up.html">Upload Project</a>
+    <a href="veiw_project.php">View Uploaded Projects</a>
+    <a href="assigned_project.php">View Assigned Supervisor</a> <!-- Changed link text -->
+    <a href="coordinator_login.php">Allocated student</a>
+    <a href="feedback.html">Feedback</a>
+</div>
+
+<div class="content-container">
+    <!-- Your content goes here -->
+    <div class="content">
+        <h1>Repository System</h1>
+        <p>The Repository system provides an ingest or 
+        submission service for receiving the digital files and 
+        some metadata, assigning an identifier to the digital 
+        object that can be used for access, 
+        and putting it in a collection.</p>
+    </div>
+</div>
+
+</body>
+</html>

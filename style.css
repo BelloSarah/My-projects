@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #055b20;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px; /* Add padding to cover the body */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%; /* Set the width of the table to 100% */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd; /* Add border to table cells */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Background color for table header */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+}
+
+tr:hover {
+    background-color: #ddd; /* Hover background color */
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
